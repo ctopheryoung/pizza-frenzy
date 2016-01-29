@@ -15,7 +15,10 @@ Week 4 project for Introduction to Programming course at Epicodus. An app to exh
 
 ## Specs
 
-* Check back soon
+* It will create a Pizza object with values for size, meat toppings, and veggie toppings - pass
+* It will calculate a price for a pizza based on size, number of meat toppings, and number of veggie toppings - pass
+* It will calculate a price for a pizza with a size but no toppings - pass
+* It will generate an error for a pizza with no size selected - pass
 
 
 ## Support and contact details
