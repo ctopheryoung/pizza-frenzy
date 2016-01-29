@@ -6,6 +6,9 @@ function Pizza(pieSize, meatToppings, veggieToppings) {
 };
 
 Pizza.prototype.generatePrice = function () {
+  if (this.pieSize === undefined) {
+    return "Please choose a size.";
+  } else {
   var price = 0;
   for (var i = 0; i < this.meatToppings; i++) {
     price += 2
@@ -13,9 +16,6 @@ Pizza.prototype.generatePrice = function () {
   for (var i = 0; i < this.veggieToppings; i++) {
     price += 1;
   }
-  if (this.pieSize === undefined) {
-    return "Please choose a size.";
-  } else {
   if (this.pieSize === "small") {
     price += 14;
   }
