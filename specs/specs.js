@@ -16,4 +16,8 @@ describe ("generatePrice", function () {
     var testPizza = new Pizza ("small");
     expect(testPizza.generatePrice()).to.equal(14);
   });
+  it("will generate an error message for a pizza with no size selected", function () {
+    var testPizza = new Pizza ();
+    expect(testPizza.generatePrice()).to.equal("Please choose a size.");
+  });
 });

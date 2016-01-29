@@ -13,6 +13,9 @@ Pizza.prototype.generatePrice = function () {
   for (var i = 0; i < this.veggieToppings; i++) {
     price += 1;
   }
+  if (this.pieSize === undefined) {
+    return "Please choose a size.";
+  } else {
   if (this.pieSize === "small") {
     price += 14;
   }
@@ -24,6 +27,7 @@ Pizza.prototype.generatePrice = function () {
   }
   if (this.pieSize === "x-large") {
     price += 20;
-  };
+  }
   return price;
+  };
 };
