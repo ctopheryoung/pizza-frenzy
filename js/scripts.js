@@ -35,9 +35,8 @@ Pizza.prototype.generatePrice = function () {
 $(document).ready(function() {
   $("form#pizzaOptions").submit(function(event) {
     var pieSize = $("select#pieSize").val();
-    console.log(pieSize);
-    var meatToppings = 0;//claculate number of meats chosen
-    var veggieToppings = 0;//calculate number of veggies chosen
+    var meatToppings = $(".meatChoices:checked").length;
+    var veggieToppings = $(".veggieChoices:checked").length;
     var testPizza = new Pizza(pieSize, meatToppings, veggieToppings);
     $("#pizzaCost").empty();
     $("#pizzaCost").append(testPizza.generatePrice());
