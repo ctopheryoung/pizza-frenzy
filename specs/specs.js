@@ -12,4 +12,8 @@ describe ("generatePrice", function () {
     var testPizza = new Pizza ("large", 1, 2);
     expect(testPizza.generatePrice()).to.equal(22);
   });
+  it("will calculate a price for a pizza with a size but no toppings", function () {
+    var testPizza = new Pizza ("small");
+    expect(testPizza.generatePrice()).to.equal(14);
+  });
 });
