@@ -10,15 +10,15 @@
   </head>
   <body>
     <div class="container">
+
       <h1>PIZZA, PIZZA PIZZA!!!</h1>
       <p>Did you know that pizza is one of the greatest foods of all time? Make your selections below to create the most exquisite pie you can think of.</p>
 
-      <form>
-
+      <form id="pizzaOptions">
         <div class="chooseSize form-group">
           <label for="pieSize">Choose a size:</label>
           <select id="pieSize">
-            <option value="small"></option>
+            <option value="not-selected"></option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
@@ -89,8 +89,15 @@
             </label>
           </div>
         </div>
-        <!-- form submit button here  -->
+
+        <button type="submit" class="btn btn-danger" id="pizza-submit">Place Order</button>
       </form>
+
+      <div id="pizzaOrdered">
+        <h3>Your pizza has been ordered!</h3>
+        <p>Total cost: <strong><span id="pizzaCost"></span></strong></p>
+      </div>
+
     </div>
   </body>
 </html>

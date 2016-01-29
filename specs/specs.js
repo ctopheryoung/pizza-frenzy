@@ -18,6 +18,6 @@ describe ("generatePrice", function () {
   });
   it("will generate an error message for a pizza with no size selected", function () {
     var testPizza = new Pizza ();
-    expect(testPizza.generatePrice()).to.equal("Please choose a size.");
+    expect(testPizza.generatePrice()).to.equal("Error: Please choose a size.");
   });
 });
