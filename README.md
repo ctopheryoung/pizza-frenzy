@@ -11,7 +11,7 @@ Week 4 project for Introduction to Programming course at Epicodus. An app to exh
 ## Setup/Installation Requirements
 
 * Check out my github repo: https://github.com/ctopheryoung/pizza-frenzy
-* And open the hosted version of the github page:
+* And open the hosted version of the github page: http://ctopheryoung.github.io/pizza-frenzy/
 
 ## Specs
 
