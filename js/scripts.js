@@ -6,7 +6,8 @@ function Pizza(pieSize, meatToppings, veggieToppings) {
 };
 
 Pizza.prototype.generatePrice = function () {
-  if (this.pieSize === "not-selected") {
+  debugger;
+  if (this.pieSize === "") {
     return "Error: Please choose a size.";
   } else {
   var price = 0;
@@ -38,11 +39,15 @@ $(document).ready(function() {
     var meatToppings = $(".meatChoices:checked").length;
     var veggieToppings = $(".veggieChoices:checked").length;
     var testPizza = new Pizza(pieSize, meatToppings, veggieToppings);
+    if (testPizza.pieSize === "") {
+      alert("Please select a size for your pizza.");
+    } else {
     $("#pizzaCost").empty();
     $("#pizzaCost").append(testPizza.generatePrice());
     $("#pizzaOrdered").show();
-
+  }
 
   event.preventDefault();
+
  })
 });
