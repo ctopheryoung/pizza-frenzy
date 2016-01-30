@@ -9,95 +9,105 @@
     <link rel="icon" type="image/png" href="img/pizza.png">
   </head>
   <body>
-    <div class="container">
-
-      <h1>PIZZA, PIZZA PIZZA!!!</h1>
-      <p>Did you know that pizza is one of the greatest foods of all time? Make your selections below to create the most exquisite pie you can think of.</p>
-
-      <form id="pizzaOptions">
-        <div class="chooseSize form-group">
-          <label for="pieSize">Choose a size:</label>
-          <select id="pieSize">
-            <option value ""></option>
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-            <option value="x-large">Extra-large</option>
-          </select>
-        </div>
-
-        <div id="chooseMeats">
-          <h3>Choose meat options:</h3>
-          <p><em>$2 each</em></p>
-          <div class="checkbox">
-            <label>
-              <input class="meatChoices" type="checkbox" value="1">
-              Sausage
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input class="meatChoices" type="checkbox" value="1">
-              Pepperoni
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input class="meatChoices" type="checkbox" value="1">
-              Anchovies
-            </label>
-          </div>
-        </div>
-
-        <div id="chooseVeggies">
-          <h3>Select Veggie Toppings:</h3>
-          <p><em>$1 each</em></p>
-          <div class="checkbox">
-            <label>
-              <input class="veggieChoices" type="checkbox" value="1">
-              Olives
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input class="veggieChoices" type="checkbox" value="1">
-              Onions
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input class="veggieChoices" type="checkbox" value="1">
-              Peppers
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input class="veggieChoices" type="checkbox" value="1">
-              Mushrooms
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input class="veggieChoices" type="checkbox" value="1">
-              Spinach
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input class="veggieChoices" type="checkbox" value="1">
-              Extra Cheese
-            </label>
-          </div>
-        </div>
-
-        <button type="submit" class="btn btn-danger" id="pizza-submit">Place Order</button>
-      </form>
-
-      <div id="pizzaOrdered">
-        <h3>Your pizza has been ordered!</h3>
-        <p>Total cost: <strong><span id="pizzaCost"></span></strong></p>
+    <div class="jumbotron">
+      <div class="container">
+      <h1>Pizza, Pizza, Pizza</h1>
       </div>
+    </div>
+    <div class="container">
+        <div id="intro">
+          <p>Did you know that pizza is one of the greatest foods of all time? Of course you did. It is one of the most delicous and versatile foods that humankind has ever known.</p>
+          <p>Make your selections below to create the most exquisite pie you can think of.</p>
+        </div>
+      <form id="pizzaOptions">
+        <div class="row">
+        <div class="col-md-4">
+          <div class="chooseSize form-group">
+            <h3>How hungry are you?</h3>
+            <label for="pieSize">Size:</label>
+            <select id="pieSize">
+              <option value ""></option>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+              <option value="x-large">Extra-large</option>
+            </select>
+          </div>
+          <div id="chooseMeats" class="form-group">
+            <h3>Choose meat options:</h3>
+            <p><em>$2 each</em></p>
+            <div class="checkbox">
+              <label>
+                <input class="meatChoices" type="checkbox" value="1">
+                Sausage
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input class="meatChoices" type="checkbox" value="1">
+                Pepperoni
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input class="meatChoices" type="checkbox" value="1">
+                Anchovies
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div id="chooseVeggies" class="form-group">
+            <h3>Select Veggie Toppings:</h3>
+            <p><em>$1 each</em></p>
+            <div class="checkbox">
+              <label>
+                <input class="veggieChoices" type="checkbox" value="1">
+                Olives
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input class="veggieChoices" type="checkbox" value="1">
+                Onions
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input class="veggieChoices" type="checkbox" value="1">
+                Peppers
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input class="veggieChoices" type="checkbox" value="1">
+                Mushrooms
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input class="veggieChoices" type="checkbox" value="1">
+                Spinach
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input class="veggieChoices" type="checkbox" value="1">
+                Extra Cheese
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <button type="submit" class="btn btn-lg btn-block btn-danger" id="pizza-submit">Place Order</button>
+        </div>
+        </form>
 
+        <div id="pizzaOrdered">
+          <h3>Your pizza has been ordered!</h3>
+          <p>Total cost: <strong><span id="pizzaCost"></span></strong></p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

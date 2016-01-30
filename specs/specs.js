@@ -6,7 +6,7 @@ describe ("Pizza", function () {
   expect(testPizza.veggieToppings).to.equal(2);
   });
 
-  it("will generate an error message for a pizza with no size selected", function () {
+  it("will pass an empty string if no size selection is made", function () {
     var testPizza = new Pizza ("");
     expect(testPizza.pieSize).to.equal("");
   });

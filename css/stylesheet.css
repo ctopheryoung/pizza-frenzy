@@ -1,3 +1,24 @@
 #pizzaOrdered {
   display:none;
 }
+
+.jumbotron {
+  background: url("../img/jumbo-background.jpg");
+  text-align: center;
+  color: #fff;
+}
+
+.container {
+  font-family: sans-serif;
+}
+
+#intro {
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 20px;
+}
+
+.btn {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
